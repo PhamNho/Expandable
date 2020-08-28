@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC">
+
+    <ImageView
+        android:id="@+id/imgDropDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="@dimen/d_10"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvItemClassName"
+        android:layout_width="@dimen/d_0"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/d_10"
+        android:paddingVertical="@dimen/d_10"
+        android:text="Tên nhóm nvl"
+        android:textAllCaps="true"
+        android:textSize="@dimen/font_size_15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvSelectAllLB"
+        app:layout_constraintStart_toEndOf="@+id/imgDropDown"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSelectAllLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn cả nhóm"
+        android:textColor="#0560A6"
+        android:textSize="@dimen/font_size_13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cbItemClass"
+        app:layout_constraintStart_toEndOf="@id/tvItemClassName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbItemClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/d_10"
+        android:minWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
